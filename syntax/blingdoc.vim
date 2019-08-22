@@ -1,5 +1,5 @@
 " Vim syntax file
-" Language:	Godoc (generated documentation for go)
+" Language:	Blingdoc (generated documentation for bling)
 " Maintainer:	David Barnett (https://github.com/google/vim-ft-go)
 " Last Change:	2014 Aug 16
 
@@ -8,14 +8,14 @@ if exists('b:current_syntax')
 endif
 
 syn case match
-syn match godocTitle "^\([A-Z][A-Z ]*\)$"
+syn match blingdocTitle "^\([A-Z][A-Z ]*\)$"
 
 command -nargs=+ HiLink hi def link <args>
 
-HiLink godocTitle Title
+HiLink blingdocTitle Title
 
 delcommand HiLink
 
-let b:current_syntax = 'godoc'
+let b:current_syntax = 'blingdoc'
 
 " vim: sw=2 sts=2 et

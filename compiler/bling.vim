@@ -1,12 +1,12 @@
 " Vim compiler file
-" Compiler:	Go
+" Compiler:	Bling
 " Maintainer:	David Barnett (https://github.com/google/vim-ft-go)
 " Last Change:	2014 Aug 16
 
 if exists('current_compiler')
   finish
 endif
-let current_compiler = 'go'
+let current_compiler = 'bling'
 
 if exists(':CompilerSet') != 2
   command -nargs=* CompilerSet setlocal <args>
@@ -15,7 +15,7 @@ endif
 let s:save_cpo = &cpo
 set cpo-=C
 
-CompilerSet makeprg=go\ build
+CompilerSet makeprg=bling\ build
 CompilerSet errorformat=
     \%-G#\ %.%#,
     \%A%f:%l:%c:\ %m,

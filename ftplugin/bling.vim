@@ -1,5 +1,5 @@
 " Vim filetype plugin file
-" Language:	Go
+" Language:	Bling
 " Maintainer:	David Barnett (https://github.com/google/vim-ft-go)
 " Last Change:	2014 Aug 16
 

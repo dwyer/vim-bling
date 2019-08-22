@@ -1,5 +1,5 @@
 " Vim indent file
-" Language:	Go
+" Language:	Bling
 " Maintainer:	David Barnett (https://github.com/google/vim-ft-go)
 " Last Change:	2014 Aug 16
 "
@@ -12,14 +12,14 @@ if exists('b:did_indent')
 endif
 let b:did_indent = 1
 
-" C indentation is too far off useful, mainly due to Go's := operator.
+" C indentation is too far off useful, mainly due to Bling's := operator.
 " Let's just define our own.
 setlocal nolisp
 setlocal autoindent
-setlocal indentexpr=GoIndent(v:lnum)
+setlocal indentexpr=BlingIndent(v:lnum)
 setlocal indentkeys+=<:>,0=},0=)
 
-if exists('*GoIndent')
+if exists('*BlingIndent')
   finish
 endif
 
@@ -35,7 +35,7 @@ else
   endfunction
 endif
 
-function! GoIndent(lnum)
+function! BlingIndent(lnum)
   let l:prevlnum = prevnonblank(a:lnum-1)
   if l:prevlnum == 0
     " top of file
